@@ -12,12 +12,6 @@ numero = 5
 print(numero)
 print(type(numero))
 
-#conversion:
-numeroUno = "1"
-numeroDos = "2"
-print('concatenacion: ', numeroUno + numeroDos)
-print('suma: ', int(numeroUno) + int(numeroDos))
-
 #flotantes:
 print('-----> flotantes <-----')
 flotante = 5.5
@@ -40,9 +34,3 @@ if mayorQue:
 else:
     print('falso')
 print(type(mayorQue))
-
-#inputs:
-print('-----> inputs <-----')
-entrada = input("Cual es tu edad?")
-print(type(entrada))
-print('tu edad es', entrada)
