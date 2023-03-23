@@ -15,3 +15,9 @@ elif condicion == False:
 else:
     print('condicion no reconocida')
 """
+
+#operador terneario:
+
+condicion = True
+
+print('verdadera') if condicion else print('falsa')
