@@ -32,3 +32,25 @@ numeroDos = 2
 print('numero 1: ', numeroUno, 'numero 2: ', numeroDos)
 print('suma: ', numeroUno + numeroDos)
 print('concatenacion: ', str(numeroUno) + str(numeroDos))
+
+print('-----> conversion <-----')
+name = 'ulises'
+print(type(name))
+name = 12
+print(type(name))
+name = True
+print(type(name))
+
+print('-----> conversion <-----')
+print('ulises' + 'gutierrez')
+print(10 + 20)
+print('ulises' + 10)#Error
+#solucion a lo anterior:
+age = 12
+print('Mi edad es: ' + str(age))
+print(f'Mi edad es: {age}')
+
+age = input('Escribe tu edad: ')
+print(type(age))
+age = int(age)
+print(f'Tu edad en 10 años sera: {age}')
