@@ -67,5 +67,3 @@ print(diccionario)
 #eliminar diccionario:
 del diccionario
 #print(diccionario)
-
-#
