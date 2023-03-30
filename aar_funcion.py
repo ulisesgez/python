@@ -14,3 +14,9 @@ def miFuncion(nombre, apellido):
 #mandar a llamar:
 miFuncion('ulises', 'gutierrez')
 miFuncion('juan', 'perez')
+
+#return:
+def suma(a, b):
+    return a + b
+resultado = suma(5, 3)
+print(resultado)
