@@ -56,3 +56,11 @@ def multiplicarValores(*numeros):
     return resultado
 
 print(multiplicarValores(2, 2, 2, 2, 2, 2, 2))
+
+#argumentos variables llave-valor, tambien como en el caso anterior podriamos colocar **terminos:
+def listaTerminos(**kwargs):
+    for llave, valor in kwargs.items():
+        print(f'{llave}: {valor}')
+
+listaTerminos(IDE = 'Itegrated Development Enviroment', PK = 'Primary Key')
+listaTerminos(DBMS = 'Database Management  System')
