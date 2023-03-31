@@ -64,3 +64,24 @@ def listaTerminos(**kwargs):
 
 listaTerminos(IDE = 'Itegrated Development Enviroment', PK = 'Primary Key')
 listaTerminos(DBMS = 'Database Management  System')
+
+#distintos tipos de datos como argumentos:
+def desplagarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+
+nombres = ['juan', 'carla', 'guillermo']
+desplagarNombres(nombres)
+desplagarNombres('carlos')
+#desplagarNombres(10)#no iterable
+desplagarNombres((10, 11))#tupla
+desplagarNombres([12, 13])#lista
+
+#funcion recursiva:
+def factorial(numero):
+    if numero == 1:
+        return 1
+    else:
+        return numero * factorial(numero - 1)
+resultado = factorial(5)
+print(f'El factorial de 5 es: {resultado}')
