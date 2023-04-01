@@ -65,3 +65,52 @@ print(nombres)
 #borrar la lista por completo:
 #del nombres
 #print(nombres)#manda error ya que nombres no existe
+
+#metodos:
+numbers = [1, 2, 4, 5, 6]
+
+#agregar elemento al final:
+numbers.append(7)
+print(numbers)
+
+#agregar elemento al inicio:
+numbers.insert(0, 'cero')
+print(numbers)
+numbers.insert(3, 'tres')
+print(numbers)
+
+#unir listas:
+otherNumbers = [8, 'nueve']
+newList = numbers + otherNumbers
+print(newList)
+
+#conocer posicion:
+print(newList.index('cero'))
+
+#remover primner elemento:
+newList.remove(('cero'))
+print(newList)
+
+#remover ultimo elemento:
+newList.pop()
+print(newList)
+
+#remover cierto elemento especifico:
+newList.pop(2)
+print(newList)
+
+#transformar array al reverso:
+newList.reverse()
+print(newList)
+
+#ordenar:
+jumbledNumbers = [0, 9, 3]
+jumbledNumbers.sort()
+print(jumbledNumbers)
+letters = ['f', 'a', 'e', 'b', 'd', 'c']
+letters.sort()
+print(letters)
+#error:
+#no = ['f', 'a', 'e', 'b', 'd', 'c', 0, 9, 3]
+#no.sort()
+#print(no)
