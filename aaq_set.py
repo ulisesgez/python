@@ -3,7 +3,6 @@ Set a dieferncia de una lista y una tupla, esta no  mantiene un orden y tampoco
 permite almacenar elemntos duplicados, no es posible modificar elementos en un set
 pero si es posible agregar mas elemntos
 """
-
 print('-----> set <-----')
 planetas = {'marte', 'jupiter', 'venus'}
 #podra percatarse que es posible cambie el orden al imprimir:
