@@ -1,12 +1,17 @@
 """
 Set a dieferncia de una lista y una tupla, esta no  mantiene un orden y tampoco
-permite almacenar elemntos duplicados, no es posible modificar elementos en un set
-pero si es posible agregar mas elemntos
+permite almacenar elementos duplicados, no es posible modificar elementos en un set
+pero si es posible agregar mas elemntos.
+EN algunas ocasiones los Set hace referencia a conjuntos, se parecen a un diccionario
+pero estos no tiene par clave - valor (key, value).
 """
 print('-----> set <-----')
 planetas = {'marte', 'jupiter', 'venus'}
+countries = {'col', 'mex', 'usa', 'mex'}
 #podra percatarse que es posible cambie el orden al imprimir:
 print(planetas)
+#no se repite mex:
+print(countries)
 
 #largo de elemntos
 print(len(planetas))
@@ -34,6 +39,21 @@ print(planetas)
 planetas.add('marte')
 planetas.add('venus')
 print(planetas)
+
+#otra forma de definir conjuntos,a partir de otras estructuras de datos:
+setString = set('saturno')
+print(setString)
+
+#tupla a set:
+setTupla = set(('urano', 'neptuno'))
+print(setTupla)
+setTupla = set(('pluton'))
+print(setTupla)
+
+#ahora con listas:
+numbers = [1, 2, 3, 4, 5, 4, 5, 3, 2, 1]
+setNUmbers = set(numbers)
+print(setNUmbers)
 
 #limpiar set:
 planetas.clear()
