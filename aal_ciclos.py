@@ -18,6 +18,16 @@ else:
     print('fin ciclo while')
 
 print('-----> while <-----')
+"""
+while True:
+    print('va a el infinito')
+"""
+counter = 0
+while counter < 10:
+    counter += 1
+    print(counter)
+
+print('-----> while <-----')
 #Inicializar variable a nada.
 respuesta = None
 
