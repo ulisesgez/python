@@ -68,3 +68,27 @@ print(planetas)#set vacio
 print(len(planetas))
 
 print('-----> Operaciones con conjuntos <-----')
+conjuntoA = {'elem1', 'elem2', 'elem3', 'elem4', 'elem5'}
+conjuntoB = {'elem5', 'elem6', 'elem7', 'elem8', 'elem9', 'elem0'}
+
+#union:
+conjuntoC = conjuntoA.union(conjuntoB)
+print(conjuntoC)
+#otra forma:
+print(conjuntoA | conjuntoB)
+
+#interseccion:
+conjuntoD = conjuntoA.intersection(conjuntoB)
+print(conjuntoD)
+#otra forma:
+print(conjuntoA & conjuntoB)
+
+#Diferencia:
+conjuntoE = conjuntoA.difference(conjuntoB)
+print(conjuntoE)
+print(conjuntoA - conjuntoB)
+
+#Diferencia Simetrica:
+conjuntoF = conjuntoA.symmetric_difference(conjuntoB)
+print(conjuntoF)
+print(conjuntoA ^ conjuntoB)
