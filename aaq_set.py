@@ -28,7 +28,11 @@ print(planetas)
 planetas.add('marte')
 print(planetas)
 
-#eliminar elemntos:
+#actualizar:
+countries.update({'arg', 'pe'})
+print(countries)
+
+#eliminar elementos:
 planetas.remove('marte')
 print(planetas)
 #a diferencia de remove, discar no genera error si no encuentra el elemnto a eliminar:
@@ -55,6 +59,12 @@ numbers = [1, 2, 3, 4, 5, 4, 5, 3, 2, 1]
 setNUmbers = set(numbers)
 print(setNUmbers)
 
+#preguntar por un elemento en especifico:
+print(6 in numbers)
+
 #limpiar set:
 planetas.clear()
-#print(planetas)
+print(planetas)#set vacio
+print(len(planetas))
+
+print('-----> Operaciones con conjuntos <-----')
