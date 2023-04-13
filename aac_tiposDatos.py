@@ -77,3 +77,16 @@ hexadecimalDos = hex(65535)
 
 print('-----> built in function <-----')
 help(bin)
+
+print('-----> escape sequences <-----')
+"""
+\\ ---> \
+\' ---> '
+\" ---> "
+\n ---> newline
+\r ---> carriage return
+\t ---> tab
+"""
+'\x61\x62\x63'#abc
+'\x58\u0058\U00000058'#XXX
+'I\N{GROWING HEART} \N{SNAKE}'#I💗 🐍
