@@ -11,6 +11,10 @@ print('-----> enteros <-----')
 numero = 5
 print(numero)
 print(type(numero))
+negativo = -40
+cero = 0
+bimario = 0b101010
+hexadecimal = 0xFF
 
 #flotantes:
 print('-----> flotantes <-----')
@@ -64,3 +68,12 @@ if mayorQue:
 else:
     print('falso')
 print(type(mayorQue))
+
+print('-----> functions <-----')
+
+bimarioDos = bin(15)
+octal = oct(8)
+hexadecimalDos = hex(65535)
+
+print('-----> built in function <-----')
+help(bin)
