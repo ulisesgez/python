@@ -2,6 +2,11 @@ print('-----> listas <-----')
 nombres = ['juan', 'maria', 'jose', 'jesus']
 nueros = [1, 2, 3, 4, 5]
 booleanos = [True, False]
+#conversion:
+coversionUno = list()
+print(coversionUno)
+coversionDos = list('Hello')
+print(coversionDos)
 
 print(nombres)
 

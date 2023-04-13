@@ -38,6 +38,8 @@ frutasLista[0] = 'Pera'
 #ahora la volvemos a convertir a trupla:
 frutas = tuple(frutasLista)
 print('\n', frutas)
+#otro ejemplo:
+(1, 2, 3) + tuple([4, 5, 6])
 
 #eliminar tupla:
 del verduras

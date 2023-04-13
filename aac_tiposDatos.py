@@ -69,6 +69,19 @@ else:
     print('falso')
 print(type(mayorQue))
 
+print('-----> boolean / contencion <-----')
+entero = 2 in [1, 2, 3, 4, 5]
+flotante = 2.5 in [1, 2, 3, 4, 5]
+listaTupla = [1, 2] in [1, 2, 3, 4, 5]
+listaTupla = 1 in [(0, 1), (2, 3)]
+listaTupla = (0, 1) in [(0, 1), (2, 3)]
+seq = [(0, 1), (2, 3)]
+seqResultado = 1 in seq
+holaMundo = 'h' in 'helloWorld'
+print(holaMundo)
+python = 'Py' in 'Python'
+print(python)
+
 print('-----> functions <-----')
 
 bimarioDos = bin(15)
