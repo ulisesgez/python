@@ -69,6 +69,11 @@ else:
     print('falso')
 print(type(mayorQue))
 
+print('-----> boolean with is methods<-----')
+print('Python'.isupper())
+print('Python'.islower())
+print('Python'.istitle())
+
 print('-----> boolean / contencion <-----')
 entero = 2 in [1, 2, 3, 4, 5]
 flotante = 2.5 in [1, 2, 3, 4, 5]
