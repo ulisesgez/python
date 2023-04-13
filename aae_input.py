@@ -1,5 +1,6 @@
 #Funcion input  para procesar la entrada del usuario:
 print('-----> inputs <-----')
+input('Enter your name: ')
 result = input('Hola, como estas?')
 print( 'Me alegra que te encuentres', result)
 
