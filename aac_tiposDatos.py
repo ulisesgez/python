@@ -34,6 +34,21 @@ print(abs(a - b) < tolerance)#True
 
 #boolean:
 print('-----> boolean <-----')
+#false:
+not True
+not 15
+not -15
+not 'hello'
+not [1, 2, 3, 4, 5]
+
+#true:
+not False
+not 0
+not 0.0
+not ''
+not []
+
+print('-----> boolean <-----')
 booleano = True
 print(booleano)
 print(type(booleano))
