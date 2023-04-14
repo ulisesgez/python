@@ -1,19 +1,25 @@
 print('-----> types <-----')
 """
 Inmutable:
-- int
-- float
-- complex
-- str
-- tuple
-- frozenset
+- Numeric Data Tyoes:
+    * int
+    * float
+    * complex
+- Sequences:
+    * str
+    * tuple
+- Sets:
+    * frozenset
 - (range)
 - (bytes)
 
 Mutable:
-- list
-- dict
-- set
+- Sequences:
+    * list
+- Mappings:
+    * dict
+- Sets:
+    * set
 - (bytearray)
 """
 
@@ -56,6 +62,9 @@ print(bStr == str(a))#True
 #ahora de una forma mas amtematica:
 tolerance = 0.00001
 print(abs(a - b) < tolerance)#True
+
+print('-----> listas <-----')
+print(complex())
 
 print('-----> listas <-----')
 print(list())
