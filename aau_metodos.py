@@ -8,6 +8,7 @@ integradas que son predeterminadas para todos los objetos.
 Sintaxis: dir(objeto)
 """
 print(dir(dict))
+print(dir(set))
 
 print('-----> methods<-----')
 
