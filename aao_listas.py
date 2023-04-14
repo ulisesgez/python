@@ -119,3 +119,13 @@ print(letters)
 #no = ['f', 'a', 'e', 'b', 'd', 'c', 0, 9, 3]
 #no.sort()
 #print(no)
+
+#List Comprehension:
+numbers = []
+for element in range(1, 11):
+    numbers.append(element)
+
+print(numbers)
+
+numbersV2 = [element for element in range(1, 11)]
+print(numbersV2)
