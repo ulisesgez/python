@@ -6,8 +6,11 @@ value = valor
 print('-----> dict <-----')
 pos = {'x': 3, 'y': 4, 'z': 5}
 print(pos['x'])
+print('x' in pos)
 print(pos['y'])
+print('y' in pos)
 print(pos['z'])
+print('z' in pos)
 
 print('-----> dict <-----')
 
@@ -63,6 +66,10 @@ print(diccionario)
 
 #remover elemento:
 diccionario.pop('dbms')
+print(diccionario)
+
+#eliminar elemento del diccionario:
+del diccionario['ide']
 print(diccionario)
 
 #limpiar diccionario:
