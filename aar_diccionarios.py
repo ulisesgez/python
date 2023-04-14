@@ -1,8 +1,13 @@
 """
-Coleccion de datos:
+Coleccion de datos, al par key-value es conocido como item:
 key = llave
 value = valor
 """
+print('-----> dict <-----')
+pos = {'x': 3, 'y': 4, 'z': 5}
+print(pos['x'])
+print(pos['y'])
+print(pos['z'])
 
 print('-----> dict <-----')
 
