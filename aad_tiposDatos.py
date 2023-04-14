@@ -1,5 +1,24 @@
-#class y str, uno dice el valor y otro es el tipo.
+print('-----> types <-----')
+"""
+Inmutable:
+- int
+- float
+- complex
+- str
+- tuple
+- frozenset
+- (range)
+- (bytes)
+
+Mutable:
+- list
+- dict
+- set
+- (bytearray)
+"""
+
 #string:
+print(str())
 print('-----> string <-----')
 cadenaTexto = 'cadenaTexto'
 print(cadenaTexto)
@@ -7,6 +26,7 @@ print(cadenaTexto)
 print(type(cadenaTexto))
 
 #enteros:
+print(int())
 print('-----> enteros <-----')
 numero = 5
 print(numero)
@@ -18,6 +38,7 @@ hexadecimal = 0xFF
 
 #flotantes:
 print('-----> flotantes <-----')
+print(float())
 flotante = 5.5
 print(type(flotante))
 #precision decimal:
@@ -35,6 +56,12 @@ print(bStr == str(a))#True
 #ahora de una forma mas amtematica:
 tolerance = 0.00001
 print(abs(a - b) < tolerance)#True
+
+print('-----> listas <-----')
+print(list())
+
+print('-----> set <-----')
+print(set())
 
 #boolean:
 print('-----> boolean <-----')
