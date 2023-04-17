@@ -1,7 +1,6 @@
 #Estructuras de control:
 #En este ejemlo prepararemos una bebida:
 
-
 print('-----> Preparar bebida: <-----')
 print('voy a la cocina')
 print('abrir nevera')
