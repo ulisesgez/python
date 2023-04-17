@@ -8,6 +8,39 @@ while condicion:
 else:
     print('fin ciclo while')
 """
+#otro ejemplo:
+n = 3
+while n >= 0:
+    print(n)
+    n -= 1
+
+#otro ejemplo:
+n = 8
+guess = None
+while guess != n:
+    guess = int(input('n: '))
+print('Correct')
+
+#otro ejemplo:
+seq = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+while seq:
+    print(seq.pop())
+print(seq)
+
+#otro ejemplo:
+a, b = 0, 1
+while b < 20:
+    print(b)
+    a, b = b, a + b
+
+#otro ejemplo:
+seq = 'XYZ'
+index = 0
+while index < len(seq):
+    print(seq[index])
+    index += 1
+
+#otro ejemplo:
 
 contador = 0
 
@@ -44,9 +77,33 @@ else:
     print('no me has dado una rspuesta con sentido')
 
 print('-----> for <-----')
+
+for n in [3, 5, 8]:
+    print(n)
+
+#otro ejemplo:
+numbers = [3, 4, 5]
+for n in numbers:
+    print(f'the square of {n} , is {n**2}')
+
+#otro ejemplo:
+d = dict(x = 3, y = 5, z = -8)
+for key in d:
+    print(key)
+
+#otro ejemplo:
+
 cadena = 'hola'
 
 for letra in cadena:
     print(letra)
 else:
     print('fin ciclo for')
+
+print('-----> for & if else<-----')
+myList = [1, 2, 3, 4, 5]
+for element in myList:
+    if element % 2 == 0:
+        print(element, 'is even')
+    else:
+        print(element, 'is odd')
