@@ -1,3 +1,10 @@
+print('-----> pass <-----')
+n = input('introduce un numero: ')
+if n >= 0:
+    pass
+else:
+    print(f'{n} is negative')
+
 print('-----> break <-----')
 for letra in 'holanda':
     if letra == 'a':
