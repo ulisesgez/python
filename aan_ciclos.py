@@ -107,3 +107,61 @@ for element in myList:
         print(element, 'is even')
     else:
         print(element, 'is odd')
+
+print('-----> for & range <-----')
+for x in range(3):
+    print('Hello')
+
+for n in range(3, 6):
+    print(f'The square of {n} is {n ** 2}')
+
+for n in range(3, -1, -1):
+    print(n)
+
+x, y, z = range(3)
+print(x)
+print(y)
+print(z)
+
+first, *rest = range(5)
+print(first)
+print(rest)
+
+*rest, last = range(5)
+print(rest)
+print(last)
+
+first, second, *rest = range(5)
+print(first)
+print(second)
+print(rest)
+
+first, *rest, last = range(5)
+print(first)
+print(last)
+
+xy0, xy1 = [(3, 5), (2, 8)]
+print(xy0)
+print(xy1)
+
+(x0, y0), (x1, y1) = [(3, 5), (2, 8)]
+print(x0)
+print(y0)
+print(x1)
+print(y1)
+
+coords = [(3, 5), (2, 8), (4, 9)]
+for x, y in coords:
+    print('x:{}, y:{}'.format(x, y))
+
+print('-----> enumerate <-----')
+enumerate('abc')
+print(list(enumerate('abc')))
+
+print(list(enumerate('abc', start=1)))
+
+print(list(enumerate('def', start=4)))
+
+print('-----> zip <-----')
+print(zip('xyz', [3, 5, 8]))
+print(zip('xyz', [3, 5, 8], 'ABC'))
