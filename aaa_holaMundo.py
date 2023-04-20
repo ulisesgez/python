@@ -1,2 +1,2 @@
-# Mi primer hola mundo:
+# Mi primer programa, hola mundo:
 print('Hola mundo')
