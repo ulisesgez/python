@@ -165,3 +165,8 @@ print(list(enumerate('def', start=4)))
 print('-----> zip <-----')
 print(zip('xyz', [3, 5, 8]))
 print(zip('xyz', [3, 5, 8], 'ABC'))
+#
+#
+#
+#
+#
