@@ -23,17 +23,15 @@ Mutable:
 - (bytearray)
 """
 
-#string:
-print(str())
 print('-----> string <-----')
+print(str())
 cadenaTexto = 'cadenaTexto'
 print(cadenaTexto)
 #ver tipo de variable:
 print(type(cadenaTexto))
 
-#enteros:
-print(int())
 print('-----> enteros <-----')
+print(int())
 numero = 5
 print(numero)
 print(type(numero))
@@ -42,7 +40,6 @@ cero = 0
 bimario = 0b101010
 hexadecimal = 0xFF
 
-#flotantes:
 print('-----> flotantes <-----')
 print(float())
 flotante = 5.5
