@@ -9,6 +9,18 @@ else:
     print('fin ciclo while')
 """
 #otro ejemplo:
+numero = 1
+while numero < 100:
+    print(numero)
+    numero += 2
+
+#otro ejemplo:
+comando = ""
+while comando.lower != "salir":
+    comando = input("$ ")
+    print(comando)
+
+#otro ejemplo:
 n = 3
 while n >= 0:
     print(n)
@@ -82,6 +94,10 @@ for n in [3, 5, 8]:
     print(n)
 
 #otro ejemplo:
+for num in range(5):
+    print(num)
+
+#otro ejemplo:
 numbers = [3, 4, 5]
 for n in numbers:
     print(f'the square of {n} , is {n**2}')
@@ -90,6 +106,15 @@ for n in numbers:
 d = dict(x = 3, y = 5, z = -8)
 for key in d:
     print(key)
+
+#otro ejemplo:
+buscar = 3
+for num in range(5):
+    if num == buscar:
+        print(f'found: {buscar}')
+        break
+else:
+    print(f'{buscar} not found')
 
 #otro ejemplo:
 
