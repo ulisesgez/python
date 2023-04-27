@@ -62,6 +62,10 @@ else:
 """
 
 #operador terneario:
+dineroTotal = 2000
+compras = "compramos todo" if dineroTotal > 1000 else "no compramos nada"
+
+#otro ejemplo con operador terneario:
 
 condicion = True
 
