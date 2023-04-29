@@ -1,5 +1,11 @@
 """Mi primer programa, hola mundo:"""
 print('Hola mundo')
+#
+#
+#
+#
+#
+#
 
 """
 Introducción a la programación:
