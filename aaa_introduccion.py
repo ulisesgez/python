@@ -1,12 +1,3 @@
-"""Mi primer programa, hola mundo:"""
-print('Hola mundo')
-#
-#
-#
-#
-#
-#
-
 """
 Introducción a la programación:
 ¿Cómo funciona un programa de computadora?
@@ -561,4 +552,42 @@ de MicroPython con una placa de desarrollo con tecnología STM32F4 llamada pyboa
 En 2017, MicroPython se utilizó para crear CircuitPython, otro lenguaje de
 programación de código abierto que se ejecuta en el hardware del microcontrolador,
 que es un derivado del lenguaje MicroPython.
+
+Instrucciones
+Ya has visto un programa de computadora que contiene una invocación de función. La invocación de una función es uno de los muchos tipos posibles de instrucciones de Python.
+
+Por supuesto, cualquier programa complejo generalmente contiene muchas más instrucciones que una. La pregunta es: ¿Cómo se acopla más de una instrucción en el código de Python?
+
+La sintaxis de Python es bastante específica en esta área. A diferencia de la mayoría de los lenguajes de programación, Python requiere que no haya más de una instrucción por línea.
+
+Una línea puede estar vacía (por ejemplo, puede no contener ninguna instrucción) pero no debe contener dos, tres o más instrucciones. Esto está estrictamente prohibido.
+
+Nota: Python hace una excepción a esta regla - permite que una instrucción se extienda por más de una línea (lo que puede ser útil cuando el código contiene construcciones complejas).
+
+Vamos a expandir el código un poco, puedes verlo en el editor. Ejecútalo y observa lo que aparece en la consola.
+
+"""
+print("La Witsi Witsi Araña subió a su telaraña.")
+print("Vino la lluvia y se la llevó.")
+
+"""
+Esta es una buena oportunidad para hacer algunas observaciones:
+
+El programa invoca a la función print() dos veces, y puedes ver dos líneas separadas en la consola - esto significa que print() comienza su salida desde una nuevalínea cada vez que comienza su ejecución; puedes cambiar este comportamiento, pero también puedes usarlo a tu favor;
+Cada invocación de print() contiene una cadena diferente, como su argumento, y el contenido de la consola lo refleja - esto significa que las instrucciones en el código se ejecutan en el mismo orden en el que se han colocado en el archivo fuente; no se ejecuta ninguna instrucción posterior hasta que se completa la anterior (hay algunas excepciones a esta regla, pero puede ignorarlas por ahora.)
+
+Hemos cambiado un poco el ejemplo - hemos agregado una invocación vacía de la función print(). La llamamos vacía porque no hemos entregado ningún argumento a la función.
+
+Puedes verlo en la ventana del editor. Ejecuta el código.
+
+¿Qué sucede?
+"""
+print("La Witsi Witsi Araña subió a su telaraña.")
+print()
+print("Vino la lluvia y se la llevó.")
+
+"""
+Como puedes ver, la invocación vacía de print() no está tan vacía como podrías haber esperado - genera una línea vacía o (esta interpretación también es correcta) genera una nuevalínea.
+
+Esta no es la única forma de producir una nuevalínea en la consola de salida. Ahora le mostraremos otra manera.
 """
