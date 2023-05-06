@@ -72,21 +72,29 @@ Hay que responder a tres preguntas importantes lo antes posible:
 
 El efecto es muy útil y muy espectacular. La función:
 
-toma sus argumentos (puede aceptar más de un argumento y también puede aceptar menos de un argumento)
-los convierte a un formato legible si es necesario (como puedes sospechar, las cadenas no requieren esta acción, ya que la cadena ya es legible)
-y envía los datos resultantes al dispositivo de salida (normalmente la consola); en otras palabras, todo lo que pongas en la función print() se aparecerá en tu pantalla.
-No es de extrañar entonces que, de ahora en adelante, utilices print() muy intensamente para ver los resultados de sus operaciones y evaluaciones.
+toma sus argumentos (puede aceptar más de un argumento y también puede aceptar menos
+de un argumento) los convierte a un formato legible si es necesario
+(como puedes sospechar, las cadenas no requieren esta acción, ya que la cadena ya es
+legible)
+y envía los datos resultantes al dispositivo de salida (normalmente la consola);
+en otras palabras, todo lo que pongas en la función print() se aparecerá en tu pantalla.
+No es de extrañar entonces que, de ahora en adelante, utilices print() muy intensamente
+para ver los resultados de sus operaciones y evaluaciones.
 
 2. ¿Qué argumentos espera print()?
 
-Cualquiera. Pronto te mostraremos que print() puede operar con prácticamente todos los tipos de datos que ofrece Python. Cadenas, números, caracteres, valores lógicos, objetos - cualquiera de estos se puede pasar con éxito a print().
+Cualquiera. Pronto te mostraremos que print() puede operar con prácticamente todos los
+tipos de datos que ofrece Python. Cadenas, números, caracteres, valores lógicos,
+objetos - cualquiera de estos se puede pasar con éxito a print().
 
 3. ¿Qué valor devuelve la función print()?
 
 Ninguno. Su efecto es suficiente.
 
 Usando múltiples argumentos
-Hasta ahora hemos probado el comportamiento de la función print() sin argumentos y con un argumento. También vale la pena intentar alimentar a la función print() con más de un argumento.
+Hasta ahora hemos probado el comportamiento de la función print() sin argumentos y con
+un argumento. También vale la pena intentar alimentar a la función print() con más de
+un argumento.
 
 Mira la ventana del editor. Esto es lo que vamos a probar ahora:
 
