@@ -227,6 +227,13 @@ miFuncion('juan', 'perez')
 
 
 #return:
+def suma(a, b):
+    return a + b
+sumatoria = suma(5, 3)
+print(sumatoria)
+
+#otro ejemplo:
+
 def sumar(a, b):
     return a + b
 resSum = sumar(5, 3)
@@ -274,7 +281,7 @@ resta(5,2,6,8)
 #kwargs:
 def getEmpleado(**kwargs):
     print(kwargs)
-    
+
 getEmpleado(nombre = 'ulises', apellido = 'gutierrez')
 
 #otro ejemplo, ahora con args, es lo mismo solo es un distintivo, podriamos poner *miTupla por ejemplo:
