@@ -1,5 +1,10 @@
 print('-----> def <-----')
-#definor funcion:
+def hola():
+    print('hola mundo')
+    print('ultimate python course')
+
+hola()
+
 
 def miFuncion():
     print('heloWorldinPython')
@@ -14,6 +19,8 @@ def miFuncion(nombre, apellido):
 #mandar a llamar:
 miFuncion('ulises', 'gutierrez')
 miFuncion('juan', 'perez')
+
+
 
 #return:
 def sumar(a, b):
@@ -36,6 +43,13 @@ def listarNombres(*nombres):
 
 listarNombres('juan', 'mises', 'ulises', 'jesus')
 listarNombres('maria', 'jose')
+
+#otro ejemplo con parametros yb argumentos:
+#parametros:
+def adios(nombre = 'pedro'):
+    print(f'adios {nombre}')
+#argumentos:
+adios('ulises')
 
 #otro ejemplo, ahora con args, es lo mismo solo es un distintivo, podriamos poner *miTupla por ejemplo:
 def sumarValores (*args):
@@ -85,12 +99,3 @@ def factorial(numero):
         return numero * factorial(numero - 1)
 resultado = factorial(5)
 print(f'El factorial de 5 es: {resultado}')
-
-#
-#
-#
-#
-#
-#
-#
-#
