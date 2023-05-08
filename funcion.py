@@ -226,7 +226,6 @@ miFuncion('ulises', 'gutierrez')
 miFuncion('juan', 'perez')
 
 
-
 #return:
 def sumar(a, b):
     return a + b
@@ -250,11 +249,11 @@ listarNombres('juan', 'mises', 'ulises', 'jesus')
 listarNombres('maria', 'jose')
 
 #otro ejemplo con parametros yb argumentos:
-#parametros:
-def adios(nombre = 'pedro'):
-    print(f'adios {nombre}')
+#parametros opcionales:
+def adios(nombre = 'pedro', apellido = 'perez'):
+    print(f'adios {nombre} {apellido}')
 #argumentos:
-adios('ulises')
+adios('ulises', 'gutierrez')
 
 #otro ejemplo, ahora con args, es lo mismo solo es un distintivo, podriamos poner *miTupla por ejemplo:
 def sumarValores (*args):
