@@ -255,6 +255,28 @@ def adios(nombre = 'pedro', apellido = 'perez'):
 #argumentos:
 adios('ulises', 'gutierrez')
 
+#xargs:
+def suma(a, b):
+    print(a + b)
+
+print(suma(5, 5))
+
+"""
+Quiero poder sumar los argumentos que necesite sin establecerlos:
+"""
+def resta(*args):
+    resultado = 0
+    for valor in args:
+        resultado -= valor
+    print(resultado)
+resta(5,2,6,8)
+
+#kwargs:
+def getEmpleado(**kwargs):
+    print(kwargs)
+    
+getEmpleado(nombre = 'ulises', apellido = 'gutierrez')
+
 #otro ejemplo, ahora con args, es lo mismo solo es un distintivo, podriamos poner *miTupla por ejemplo:
 def sumarValores (*args):
     resultado = 0
