@@ -9,8 +9,3 @@ print(id(y))
 #posicion de memoria donde se encuentra el valor que almacena result:
 result = x + y
 print(id(result))
-#
-#
-#
-#
-#
