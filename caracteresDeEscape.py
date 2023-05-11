@@ -37,3 +37,16 @@ Experimenta con tu código en el editor, ejecútalo y ve qué sucede.
 print("La Witsi Witsi Araña\nsubió a su telaraña.")
 print()
 print("Vino la lluvia\nay se la llevó.")
+
+print('-----> escape sequences <-----')
+"""
+\\ ---> \
+\' ---> '
+\" ---> "
+\n ---> newline
+\r ---> carriage return
+\t ---> tab
+"""
+'\x61\x62\x63'#abc
+'\x58\u0058\U00000058'#XXX
+'I\N{GROWING HEART} \N{SNAKE}'#I💗 🐍
