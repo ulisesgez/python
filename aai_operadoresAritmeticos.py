@@ -16,7 +16,16 @@ Recuerda: Cuando los datos y operadores se unen, forman juntos expresiones. La e
 Nota: En los ejemplos, los dobles asteriscos están rodeados de espacios, no es obligatorio hacerlo pero hace que el código sea mas legible.
 Los ejemplos muestran una característica importante de los operadores numéricos de Python.
 
-Operadores y sus prioridades
+Operadores y sus prioridades:
+
+PEMDAS:
+p - parentesis
+e - exponentes
+m - multiplicacion
+d - division
+a - adicion
+s - sustraccion
+
 Hasta ahora, se ha tratado cada operador como si no tuviera relación con los otros. Obviamente, dicha situación tan simple e ideal es muy rara en la programación real.
 
 También, muy seguido encontrarás más de un operador en una expresión, y entonces esta presunción ya no es tan obvia.
@@ -198,11 +207,34 @@ print('Resultado exponente: ', exponente)
 print(f'Resultado exponente: {exponente}')
 
 """
-PEMDAS:
-p - parentesis
-e - exponentes
-m - multiplicacion
-d - division
-a - adicion
-s - sustraccion
+Operadores Abreviados
+Es tiempo de explicar el siguiente conjunto de operadores que harán la vida del programador/desarrollador más fácil. Muy seguido, se desea utilizar la misma variable al lado derecho y al lado izquierdo del operador = operator.
+
+Por ejemplo, si se necesita calcular una serie de valores sucesivos de la potencia de 2, se puede usar el siguiente código:
+x = x * 2
+
+También, puedes utilizar una expresión como la siguiente si no puedes dormir y estas tratando de resolverlo con alguno de los métodos tradicionales:
+sheep = sheep + 1
+
+
+Python ofrece una manera más corta de escribir operaciones como estas, lo cual se puede codificar de la siguiente manera:
+x *= 2
+sheep += 1
+
+A continuación se intenta presentar una descripción general para este tipo de operaciones. Si op es un operador de dos argumentos (esta es una condición muy importante) y el operador es utilizado en el siguiente contexto...:
+
+variable = variable op expresión
+
+...entonces se puede simplificar y mostrar de la siguiente manera:
+
+variable op= expresión
+
+Observa los siguientes ejemplos. Asegúrate de entenderlos todos.
+
+Expresión	            | Operador abreviado
+i = i + 2 * j           | i += 2 * j
+var = var / 2           | var /= 2
+rem = rem % 10          | rem %= 10
+j = j - (i + var + rem) | j -= (i + var + rem)
+x = x ** 2              | x **= 2
 """
