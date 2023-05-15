@@ -182,3 +182,8 @@ print(var)
 """
 500 ‒ ¿por qué? Bueno, primero, se crea la variable var y se le asigna un valor de 100. Luego, a la misma variable se le asigna un nuevo valor: el resultado de sumar 200 a 300, que es 500.
 """
+
+
+
+
+#
