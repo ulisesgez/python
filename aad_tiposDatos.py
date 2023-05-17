@@ -367,6 +367,61 @@ print(holaMundo)
 python = 'Py' in 'Python'
 print(python)
 
+"""
+Operadores cadena
+Es tiempo de regresar a estos dos operadores aritméticos: + y *.
+
+Ambos tienen una función secundaría. Son capaces de hacer algo más que sumar y multiplicar.
+
+Los hemos visto en acción cuando sus argumentos son (flotantes o enteros, no hay diferencia).
+
+Ahora veremos que son capaces también de manejar o manipular cadenas, aunque, en una manera muy específica.
+
+El signo de + (más), al ser aplicado a dos cadenas, se convierte en un operador de concatenación:
+
+string + string
+
+Simplemente concatena (junta) dos cadenas en una. Por supuesto, puede ser utilizado más de una vez en una misma expresión, y en tal contexto se comporta con enlazado del lado izquierdo.
+
+En contraste con el operador aritmético, el operador de concatenación no es conmutativo, por ejemplo, "ab" + "ba" no es lo mismo que "ba" + "ab".
+
+No olvides, si se desea que el signo + sea un concatenador, no un sumador, solo se debe asegurar que ambos argumentos sean cadenas.
+
+No se pueden mezclar los tipos de datos aquí.
+
+Este sencillo programa muestra el signo + en su segundo uso:
+"""
+fnam = input("¿Me puedes dar tu nombre por favor? ")
+lnam = input("¿Me puedes dar tu apellido por favor? ")
+print("Gracias. ")
+print("\nTu nombre es " + fnam + " " + lnam + ".")
+
+"""
+Nota: el usar + para concatenar cadenas te permite construir la salida de una manera más precisa que con una función print() pura, incluso si está enriquecida con end= y sep= argumentos de palabras clave.
+
+Replicación
+El signo de * (asterisco), cuando es aplicado a una cadena y a un número (o a un número y cadena) se convierte en un operador de replicación:
+
+
+string * number
+number * string
+ 
+Replica la cadena el numero de veces indicado por el número.
+
+Por ejemplo:
+
+"James" * 3 produce "JamesJamesJames"
+3 * "an" produce "ananan"
+5 * "2" (o "2" * 5) produce "22222" (no 10!)
+  Recuerda  
+Un número menor o igual a cero produce una cadena vacía.
+
+Este sencillo programa "dibuja" un rectángulo, haciendo uso del antiguo operador (+) en un nuevo rol:
+
+"""
+print("+" + 10 * "-" + "+")
+print(("|" + " " * 10 + "|\n") * 5, end="")
+print("+" + 10 * "-" + "+")
 
 print('-----> string <-----')
 print(str())

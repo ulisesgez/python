@@ -201,7 +201,69 @@ Ejecuta el código y comprueba si coincide con tus predicciones.
 
 Ahora que comprendes la función print(), estás listo para considerar cómo almacenar y procesar datos en Python.
 
-Sin print(), no podrías ver ningún resultado."""
+Sin print(), no podrías ver ningún resultado.
+
+La función input()
+
+Ahora se introducirá una nueva función, la cual pareciese ser un reflejo de la función print().
+
+¿Por qué? Bueno, print() envía datos a la consola.
+
+Esta nueva función obtiene datos de ella.
+
+print() no tiene un resultado utilizable. La importancia de esta nueva función es que regresa un valor muy utilizable.
+
+La función se llama input(). El nombre de la función lo dice todo.
+
+La función input() es capaz de leer datos que fueron introducidos por el usuario y pasar esos datos al programa en ejecución.
+
+El programa entonces puede manipular los datos, haciendo que el código sea verdaderamente interactivo.
+
+Todos los programas leen y procesan datos. Un programa que no obtiene datos de entrada del usuario es un programa sordo.
+
+Observa el ejemplo:
+"""
+print("Dime lo que sea...")
+anything = input()
+print("Hmm...", anything, "... ¿en serio?")
+"""
+La función input() con un argumento
+La función input() puede hacer otra cosa: puede avisar al usuario sin ninguna ayuda de print().
+
+Hemos modificado un poco nuestro ejemplo, mira el código:
+"""
+anything = input("Dime lo que sea...")
+print("Hmm...", anything, "...¿en serio?")
+
+"""
+El resultado de la función input()
+Se ha dicho antes, pero hay que decirlo sin ambigüedades una vez más: el resultado de la función input() es una cadena.
+
+Una cadena que contiene todos los caracteres que el usuario introduce desde el teclado. No es un entero ni un flotante.
+
+Esto significa que no se debe utilizar como un argumento para operaciones matemáticas, por ejemplo, no se pueden utilizar estos datos para elevarlos al cuadrado, para dividirlos entre algo o por algo.
+
+Input() y conversión de tipo
+El tener un equipo compuesto por input()-int()-float() abre muchas nuevas posibilidades.
+
+Eventualmente serás capaz de escribir programas completos, los cuales acepten datos en forma de números, los cuales serán procesados y se mostrarán los resultados.
+
+Por supuesto, estos programas serán muy primitivos y no muy utilizables, debido a que no pueden tomar decisiones, y consecuentemente no son capaces de reaccionar acorde a cada situación.
+
+Sin embargo, esto no es un problema; se explicará como solucionarlo pronto.
+
+El siguiente ejemplo hace referencia al programa anterior que calcula la longitud de la hipotenusa. Vamos a reescribirlo, para que pueda leer las longitudes de los catetos desde la consola.
+
+"""
+leg_a = float(input("Ingresa la longitud del primer cateto: "))
+leg_b = float(input("Ingresa la longitud del segundo cateto: "))
+hypo = (leg_a**2 + leg_b**2) ** .5
+print("La longitud de la hipotenusa es:", hypo)
+
+anything = input("Ingresa un número:")
+something = anything ** 2.0
+print(anything, "al cuadrado es", something)
+
 
 print('-----> def <-----')
 def hola():
