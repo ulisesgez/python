@@ -13,9 +13,11 @@ En general, en Python, un bucle se puede representar de la siguiente manera:
 while
     instruction
  
-Si observas algunas similitudes con la instrucción if, está bien. De hecho, la diferencia sintáctica es solo una: usa la palabra while en lugar de la palabra if.
+Si observas algunas similitudes con la instrucción if, está bien. De hecho, la 
+diferencia sintáctica es solo una: usa la palabra while en lugar de la palabra if.
 
-La diferencia semántica es más importante: cuando se cumple la condición, if realiza sus sentencias sólo una vez; while repite la ejecución siempre que la condición se evalúe como True.
+La diferencia semántica es más importante: cuando se cumple la condición, if r
+ealiza sus sentencias sólo una vez; while repite la ejecución siempre que la condición se evalúe como True.
 
 Nota: todas las reglas relacionadas con sangría también se aplican aquí. Te mostraremos esto pronto.
 
@@ -31,13 +33,18 @@ while conditional_expression:
  
 Ahora, es importante recordar que:
 
-si deseas ejecutar más de una sentencia dentro de un while, debes (como con if) poner sangría a todas las instrucciones de la misma manera.
+si deseas ejecutar más de una sentencia dentro de un while, debes (como con if) poner sangría a 
+todas las instrucciones de la misma manera.
 una instrucción o conjunto de instrucciones ejecutadas dentro del while se llama el cuerpo del bucle.
-si la condición es False (igual a cero) tan pronto como se compruebe por primera vez, el cuerpo no se ejecuta ni una sola vez (ten en cuenta la analogía de no tener que hacer nada si no hay nada que hacer).
-el cuerpo debe poder cambiar el valor de la condición, porque si la condición es True al principio, el cuerpo podría funcionar continuamente hasta el infinito. Observa que hacer una cosa generalmente disminuye la cantidad de cosas por hacer.
+si la condición es False (igual a cero) tan pronto como se compruebe por primera vez, el cuerpo no 
+se ejecuta ni una sola vez (ten en cuenta la analogía de no tener que hacer nada si no hay nada que hacer).
+el cuerpo debe poder cambiar el valor de la condición, porque si la condición es True al principio, 
+el cuerpo podría funcionar continuamente hasta el infinito. Observa que hacer una cosa generalmente 
+disminuye la cantidad de cosas por hacer.
 
 Un bucle infinito
-Un bucle infinito, también denominado bucle sin fin, es una secuencia de instrucciones en un programa que se repite indefinidamente (bucle sin fin).
+Un bucle infinito, también denominado bucle sin fin, es una secuencia de instrucciones en un programa 
+que se repite indefinidamente (bucle sin fin).
 
 Este es un ejemplo de un bucle que no puede finalizar su ejecución:
 
@@ -48,9 +55,11 @@ while True:
 Este bucle imprimirá infinitamente "Estoy atrapado dentro de un bucle." en la pantalla.
 
   Nota  
-Si deseas obtener la mejor experiencia de aprendizaje al ver cómo se comporta un bucle infinito, inicia IDLE, crea un nuevo archivo, copia y pega el código anterior, guarda tu archivo y ejecuta el programa. Lo que verás es la secuencia interminable de cadenas impresas de "Estoy atrapado dentro de un bucle." en la ventana de la consola de Python. Para finalizar tu programa, simplemente presiona Ctrl-C (o Ctrl-Break en algunas computadoras). Esto provocará la excepción KeyboardInterrupt y permitirá que tu programa salga del bucle. Hablaremos de ello más adelante en el curso.
+Si deseas obtener la mejor experiencia de aprendizaje al ver cómo se 
+comporta un bucle infinito, inicia IDLE, crea un nuevo archivo, copia y pega el código anterior, guarda tu archivo y ejecuta el programa. Lo que verás es la secuencia interminable de cadenas impresas de "Estoy atrapado dentro de un bucle." en la ventana de la consola de Python. Para finalizar tu programa, simplemente presiona Ctrl-C (o Ctrl-Break en algunas computadoras). Esto provocará la excepción KeyboardInterrupt y permitirá que tu programa salga del bucle. Hablaremos de ello más adelante en el curso.
 
-Volvamos al bosquejo del algoritmo que te mostramos recientemente. Te mostraremos como usar este bucle recién aprendido para encontrar el número más grande de un gran conjunto de datos ingresados.
+Volvamos al bosquejo del algoritmo que te mostramos recientemente. 
+Te mostraremos como usar este bucle recién aprendido para encontrar el número más grande de un gran conjunto de datos ingresados.
 
 Analiza el programa cuidadosamente. Localiza donde comienza el bucle (línea 8) y descubre como se sale del cuerpo del bucle:
 
@@ -73,7 +82,8 @@ while number != -1:
 # Imprime el número más grande.
 print("El número más grande es:", largest_number)
  
-Comprueba como este código implementa el algoritmo que te mostramos anteriormente.
+Comprueba como este código implementa el algoritmo que 
+te mostramos anteriormente.
 
 """
 
