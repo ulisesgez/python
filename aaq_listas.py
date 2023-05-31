@@ -33,6 +33,10 @@ print(nombres)
 nombres[3] = 'moises'
 print(nombres)
 
+#Modificar lista:
+ceros = [0] * 5
+print(ceros)
+
 #Iterar cadena:
 for nombre in nombres:
     print(nombre)
