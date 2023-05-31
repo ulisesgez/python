@@ -7,8 +7,11 @@ coversionUno = list()
 print(coversionUno)
 coversionDos = list('Hello')
 print(coversionDos)
-
 print(nombres)
+
+#otro ejemplo:
+carro = ['mazda', 'chevrolet', 'kia']
+print(carro)
 
 #acceder a los elementos:
 print(nombres[0])
