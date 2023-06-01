@@ -134,5 +134,7 @@ for element in range(1, 11):
 
 print(numbers)
 
+#Utilizando List Comprehension, es el codigo de arriba pero en una sola linea:
+
 numbersV2 = [element for element in range(1, 11)]
 print(numbersV2)
