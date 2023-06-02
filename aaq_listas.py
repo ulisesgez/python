@@ -138,3 +138,24 @@ print(numbers)
 
 numbersV2 = [element for element in range(1, 11)]
 print(numbersV2)
+
+#Desempaquetado de listas:
+productos = ["laptop", "mouse", "keyboard", "microphone"]
+"""
+Esto no:
+primero = productos[0]
+segundo = productos[1]
+tercero = productos[2]
+cuarto = productos[3]
+Mejor forma:
+"""
+primero, *otros = productos
+print(primero, otros)
+
+"""
+De lo anterior podemos ver otro ejemplo:
+numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+primero, segundo, *otros, penultimo, ultimo = numeros
+print(primero, segundo, otros, penultimo, ultimo)
+print(segundo, penultimo, otros)
+"""
