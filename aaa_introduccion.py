@@ -554,17 +554,27 @@ programación de código abierto que se ejecuta en el hardware del microcontrola
 que es un derivado del lenguaje MicroPython.
 
 Instrucciones
-Ya has visto un programa de computadora que contiene una invocación de función. La invocación de una función es uno de los muchos tipos posibles de instrucciones de Python.
+Ya has visto un programa de computadora que contiene una invocación de función.
+La invocación de una función es uno de los muchos tipos posibles de instrucciones
+de Python.
 
-Por supuesto, cualquier programa complejo generalmente contiene muchas más instrucciones que una. La pregunta es: ¿Cómo se acopla más de una instrucción en el código de Python?
+Por supuesto, cualquier programa complejo generalmente contiene muchas más
+instrucciones que una. La pregunta es: ¿Cómo se acopla más de una instrucción en el
+código de Python?
 
-La sintaxis de Python es bastante específica en esta área. A diferencia de la mayoría de los lenguajes de programación, Python requiere que no haya más de una instrucción por línea.
+La sintaxis de Python es bastante específica en esta área. A diferencia de la mayoría
+de los lenguajes de programación, Python requiere que no haya más de una instrucción
+por línea.
 
-Una línea puede estar vacía (por ejemplo, puede no contener ninguna instrucción) pero no debe contener dos, tres o más instrucciones. Esto está estrictamente prohibido.
+Una línea puede estar vacía (por ejemplo, puede no contener ninguna instrucción) pero
+no debe contener dos, tres o más instrucciones. Esto está estrictamente prohibido.
 
-Nota: Python hace una excepción a esta regla - permite que una instrucción se extienda por más de una línea (lo que puede ser útil cuando el código contiene construcciones complejas).
+Nota: Python hace una excepción a esta regla - permite que una instrucción se extienda
+por más de una línea (lo que puede ser útil cuando el código contiene construcciones
+complejas).
 
-Vamos a expandir el código un poco, puedes verlo en el editor. Ejecútalo y observa lo que aparece en la consola.
+Vamos a expandir el código un poco, puedes verlo en el editor. Ejecútalo y observa lo
+que aparece en la consola.
 
 """
 print("La Witsi Witsi Araña subió a su telaraña.")
@@ -573,10 +583,18 @@ print("Vino la lluvia y se la llevó.")
 """
 Esta es una buena oportunidad para hacer algunas observaciones:
 
-El programa invoca a la función print() dos veces, y puedes ver dos líneas separadas en la consola - esto significa que print() comienza su salida desde una nuevalínea cada vez que comienza su ejecución; puedes cambiar este comportamiento, pero también puedes usarlo a tu favor;
-Cada invocación de print() contiene una cadena diferente, como su argumento, y el contenido de la consola lo refleja - esto significa que las instrucciones en el código se ejecutan en el mismo orden en el que se han colocado en el archivo fuente; no se ejecuta ninguna instrucción posterior hasta que se completa la anterior (hay algunas excepciones a esta regla, pero puede ignorarlas por ahora.)
+El programa invoca a la función print() dos veces, y puedes ver dos líneas separadas
+en la consola - esto significa que print() comienza su salida desde una nuevalínea
+cada vez que comienza su ejecución; puedes cambiar este comportamiento, pero también
+puedes usarlo a tu favor;
+Cada invocación de print() contiene una cadena diferente, como su argumento, y el
+contenido de la consola lo refleja - esto significa que las instrucciones en el código
+se ejecutan en el mismo orden en el que se han colocado en el archivo fuente; no se
+ejecuta ninguna instrucción posterior hasta que se completa la anterior (hay algunas
+excepciones a esta regla, pero puede ignorarlas por ahora.)
 
-Hemos cambiado un poco el ejemplo - hemos agregado una invocación vacía de la función print(). La llamamos vacía porque no hemos entregado ningún argumento a la función.
+Hemos cambiado un poco el ejemplo - hemos agregado una invocación vacía de la función
+print(). La llamamos vacía porque no hemos entregado ningún argumento a la función.
 
 Puedes verlo en la ventana del editor. Ejecuta el código.
 
@@ -587,42 +605,62 @@ print()
 print("Vino la lluvia y se la llevó.")
 
 """
-Como puedes ver, la invocación vacía de print() no está tan vacía como podrías haber esperado - genera una línea vacía o (esta interpretación también es correcta) genera una nuevalínea.
+Como puedes ver, la invocación vacía de print() no está tan vacía como podrías haber
+esperado - genera una línea vacía o (esta interpretación también es correcta) genera
+una nuevalínea.
 
-Esta no es la única forma de producir una nuevalínea en la consola de salida. Ahora le mostraremos otra manera.
+Esta no es la única forma de producir una nuevalínea en la consola de salida. Ahora
+le mostraremos otra manera.
 
 Comentarios – ¿por qué, cuándo, y dónde?
 
-Quizá en algún momento será necesario poner algunas palabras en el código dirigidas no a Python, sino a las personas quienes estén leyendo el código con el fin de explicarles como es que funciona, o tal vez especificar el significado de las variables, también para documentar quien es el autor del programa y en que fecha fue escrito.
+Quizá en algún momento será necesario poner algunas palabras en el código dirigidas
+no a Python, sino a las personas quienes estén leyendo el código con el fin de
+explicarles como es que funciona, o tal vez especificar el significado de las variables,
+también para documentar quien es el autor del programa y en que fecha fue escrito.
 
-Un texto insertado en el programa el cual es, omitido en la ejecución, es denominado un comentario.
+Un texto insertado en el programa el cual es, omitido en la ejecución, es denominado un
+comentario.
 
-¿Cómo se colocan este tipo de comentarios en el código fuente? Tiene que ser hecho de cierta manera para que Python no intente interpretarlo como parte del código.
+¿Cómo se colocan este tipo de comentarios en el código fuente? Tiene que ser hecho de
+cierta manera para que Python no intente interpretarlo como parte del código.
 
-Cuando Python se encuentra con un comentario en el programa, el comentario es completamente transparente - desde el punto de vista de Python, el comentario es solo un espacio vacío, sin importar que tan largo sea.
+Cuando Python se encuentra con un comentario en el programa, el comentario es
+completamente transparente - desde el punto de vista de Python, el comentario es solo
+un espacio vacío, sin importar que tan largo sea.
 
-En Python, un comentario es un texto que comienza con el símbolo # y se extiende hasta el final de la línea.
+En Python, un comentario es un texto que comienza con el símbolo # y se extiende hasta
+el final de la línea.
 
-Si se desea colocar un comentario que abarca varias líneas, se debe colocar este símbolo en cada línea. Justo como en el siguiente código:
+Si se desea colocar un comentario que abarca varias líneas, se debe colocar este
+símbolo en cada línea. Justo como en el siguiente código:
 """
 # Este programa evalúa la hipotenusa c. # a y b son las longitudes de los cátetos. a = 3.0 b = 4.0 c = (a ** 2 + b ** 2) ** 0.5 # Se emplea ** en lugar de una raíz cuadrada. print("c =", c)
 """
-Los desarrolladores buenos y responsables describen cada pieza importante de código, por ejemplo, el explicar el rol de una variables. Aunque la mejor manera de comentar una variable es dándole un nombre que no sea ambiguo.
+Los desarrolladores buenos y responsables describen cada pieza importante de código,
+por ejemplo, el explicar el rol de una variables. Aunque la mejor manera de comentar
+una variable es dándole un nombre que no sea ambiguo.
 
-Por ejemplo, si una variable determinada esta diseñada para almacenar el área de un cuadrado, el nombre square_area será muchísimo mejor que aunt_jane.
+Por ejemplo, si una variable determinada esta diseñada para almacenar el área de un
+cuadrado, el nombre square_area será muchísimo mejor que aunt_jane.
 
 El nombre dado a la variable se puede definir como auto-comentable.
 
 Marcar fragmentos de código
-Los comentarios pueden ser útiles en otro aspecto - se pueden utilizar para marcar un fragmento de código que actualmente no se necesita, cual sea la razón. Observa el siguiente ejemplo, sí se descomenta la línea resaltada, esto afectara la salida o resultado del código:
+Los comentarios pueden ser útiles en otro aspecto - se pueden utilizar para marcar un
+fragmento de código que actualmente no se necesita, cual sea la razón. Observa el
+siguiente ejemplo, sí se descomenta la línea resaltada, esto afectara la salida o
+resultado del código:
 
 """
 # Este es un programa de prueba. x = 1 y = 2 # y = y + x print(x + y)
 """
-Esto es frecuentemente realizado cuando se esta probando un programa, con el fin de aislar un fragmento de código donde posiblemente se encuentra un error.
+Esto es frecuentemente realizado cuando se esta probando un programa, con el fin de
+aislar un fragmento de código donde posiblemente se encuentra un error.
 
   Consejo  
-Si deseas comentar o descomentar rápidamente varias línea(s) de código, selecciona las líneas que deseas modificar y utiliza el siguiente método abreviado de teclado: CTRL + / (Windows) or CMD + / (Mac OS). Es un truco muy útil, ¿no? Ahora experimenta con el código en el editor.
+Si deseas comentar o descomentar rápidamente varias línea(s) de código, selecciona
+las líneas que deseas modificar y utiliza el siguiente método abreviado de teclado:
+CTRL + / (Windows) or CMD + / (Mac OS). Es un truco muy útil, ¿no? Ahora experimenta
+con el código en el editor.
 """
-#
-#
