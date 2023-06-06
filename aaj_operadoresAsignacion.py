@@ -12,7 +12,9 @@ Es un operador binario con enlazado del lado izquierdo. Necesita dos argumentos 
 
 Operadores
 Igualdad: El operador igual a (==)
-El operador == (igual a) compara los valores de dos operandos. Si son iguales, el resultado de la comparación es True. Si no son iguales, el resultado de la comparación es False.
+El operador == (igual a) compara los valores de dos operandos. Si son iguales, el
+resultado de la comparación es True. Si no son iguales, el resultado de la comparación
+es False.
 
 Observa la comparación de igualdad a continuación - ¿Cuál es el resultado de esta operación?
 

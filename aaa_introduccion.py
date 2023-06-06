@@ -658,7 +658,7 @@ resultado del código:
 Esto es frecuentemente realizado cuando se esta probando un programa, con el fin de
 aislar un fragmento de código donde posiblemente se encuentra un error.
 
-  Consejo  
+Consejo  
 Si deseas comentar o descomentar rápidamente varias línea(s) de código, selecciona
 las líneas que deseas modificar y utiliza el siguiente método abreviado de teclado:
 CTRL + / (Windows) or CMD + / (Mac OS). Es un truco muy útil, ¿no? Ahora experimenta
