@@ -37,6 +37,17 @@ print(nombres)
 ceros = [0] * 5
 print(ceros)
 
+#iterar lista:
+mascotas = ['perro', 'gato', 'pez']
+
+for mascota in mascotas:
+    print(mascota)
+
+#enumerate(hace referencia a las tuplas:
+productos = ['laptop', 'mouse', 'teclado', 'monitor']
+for producto in enumerate(productos):
+    print(producto)
+
 #Iterar cadena:
 for nombre in nombres:
     print(nombre)
