@@ -1,5 +1,5 @@
 """
-Variables – cajas con forma de datos
+Variables, cajas con forma de datos
 Es justo que Python nos permita codificar literales las cuales contengan valores
 numéricos y cadenas.
 
@@ -13,7 +13,7 @@ operaciones, para poder emplearlos en otras operaciones, y así sucesivamente.
 producir resultados subsecuentes?
 
 Python ayudará con ello. Python ofrece "cajas" (o "contenedores") especiales para
-este propósito, estas cajas son llamadas variables ‒ el nombre mismo sugiere que el
+este propósito, estas cajas son llamadas variables el nombre mismo sugiere que el
 contenido de estos contenedores puede variar en casi cualquier forma.
 
 ¿Cuáles son los componentes o elementos de una variable en Python?
@@ -35,10 +35,10 @@ y el carácter _ (guion bajo)
 El nombre de la variable debe comenzar con una letra;
 El carácter guion bajo es considerado una letra;
 Las mayúsculas y minúsculas se tratan de forma distinta (un poco diferente que en el
-mundo real - Alicia y ALICIA son el mismo nombre, pero en Python son dos nombres de
+mundo real Alicia y ALICIA son el mismo nombre, pero en Python son dos nombres de
 variable distintos, subsecuentemente, son dos variables diferentes);
 El nombre de las variables no pueden ser igual a alguna de las palabras reservadas de
-Python (las palabras clave - explicará más de esto pronto).
+Python (las palabras clave explicará más de esto pronto).
 Nota que la misma restricción aplica a los nombres de funciones.
 
 Python no impone restricciones en la longitud de los nombres de las variables,
@@ -70,7 +70,7 @@ Ahora veamos algunos nombres incorrectos:
 !important (no comienza con una letra)
 exchange rate (contiene un espacio).
 
-El PEP 8 -- Style Guide for Python Code recomienda la siguiente convención de
+El PEP 8 Style Guide for Python Code recomienda la siguiente convención de
 nomenclatura para variables y funciones en Python:
 
 Los nombres de las variables deben estar en minúsculas, con palabras separadas por
@@ -100,11 +100,11 @@ cualquiera de estas palabras se pueden modificar cambiando una o varias letras d
 mayúsculas a minúsculas o viceversa, creando una nueva palabra, la cual no esta
 reservada.
 
-Por ejemplo - no se puede nombrar a la variable así:
+Por ejemplo no se puede nombrar a la variable así:
 
 import
 
-No se puede tener una variable con ese nombre - esta prohibido. pero se puede hacer lo
+No se puede tener una variable con ese nombre esta prohibido. pero se puede hacer lo
 siguiente:
 
 Import
@@ -124,7 +124,7 @@ El valor de la variable en lo que se ha puesto dentro de ella. Puede variar tant
 se necesite o requiera. El valor puede ser entero, después flotante, y eventualmente
 ser una cadena.
 
-Hablemos de dos cosas importantes - como son creadas las variables, y como poner
+Hablemos de dos cosas importantes como son creadas las variables, y como poner
 valores dentro de ellas (o mejor dicho, como dar o pasarles valores).
 
 Una variable se crea cuando se le asigna un valor. A diferencia de otros lenguajes
@@ -166,7 +166,7 @@ una variable a la cual no se le ha dado un valor).
 Este ejemplo ocasionará un error:
 """
 var = 1
-print(Var)
+print(var)
 
 """
 Se ha tratado de utilizar la variable llamada Var, la cual no tiene ningún valor
@@ -216,7 +216,7 @@ Algunos prefieren leer el código así: var se convierte en 1.
 
 La tercera línea le asigna a la misma variable un nuevo valor tomado de la variable
 misma, sumándole 1.Al ver algo así, un matemático
-probablemente protestaría - ningún valor puede ser igualado a si mismo más uno.
+probablemente protestaría ningún valor puede ser igualado a si mismo más uno.
 Esto es una contradicción. Pero Python trata el signo = no como igual a, sino como
 asigna un valor.
 
@@ -234,7 +234,7 @@ var = 200 + 300
 print(var)
 
 """
-500 ‒ ¿por qué? Bueno, primero, se crea la variable var y se le asigna un valor de 100.
+500 ¿por qué? Bueno, primero, se crea la variable var y se le asigna un valor de 100.
 Luego, a la misma variable se le asigna un nuevo valor: el resultado de sumar 200 a 300,
 que es 500.
 """
