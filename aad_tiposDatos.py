@@ -1,5 +1,13 @@
 print('-----> types <-----')
 """
+Tipos de datos:
+Los datos son la esencia de cada programa. Los datos pueden ser de diferentes tipos,
+y cada tipo puede ser manejado de manera diferente.
+Python es un lenguaje de programación fuertemente tipado, lo que significa que cada
+objeto tiene un tipo (o clase), y cada tipo es estrictamente definido.
+El tipo de un objeto determina exactamente qué tipo de valores puede almacenar y
+qué operaciones se pueden realizar con él.
+
 Inmutable:
 - Numeric Data Tyoes:
     * int
