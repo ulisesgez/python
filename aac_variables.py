@@ -1,5 +1,5 @@
 """
-Variables, cajas con forma de datos
+Variables, cajas con forma de datos:
 Es justo que Python nos permita codificar literales las cuales contengan valores
 numéricos y cadenas.
 
