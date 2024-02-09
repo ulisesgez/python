@@ -17,7 +17,6 @@ este propósito, estas cajas son llamadas variables el nombre mismo sugiere que 
 contenido de estos contenedores puede variar en casi cualquier forma.
 
 ¿Cuáles son los componentes o elementos de una variable en Python?
-
 Un nombre;
 Un valor (el contenido del contenedor)
 Comencemos con lo relacionado al nombre de la variable.
@@ -25,10 +24,8 @@ Comencemos con lo relacionado al nombre de la variable.
 Las variables no aparecen en un programa automáticamente. Como desarrollador,
 tu debes decidir cuantas variables deseas utilizar en tu programa.
 
-También las debes de nombrar.
-
-Nombres de Variables
-Si se desea nombrar una variable, se deben seguir las siguientes reglas:
+Nombres de Variables:
+Si se desea nombrar una variable, se deben seguir las siguientes reglas.
 
 El nombre de la variable debe de estar compuesto por MAYÚSCULAS, minúsculas, dígitos,
 y el carácter _ (guion bajo)
@@ -46,7 +43,6 @@ pero eso no significa que un nombre de variable largo sea mejor que uno corto.
 
 Aquí se muestran algunos nombres de variable que son correctos, pero que no siempre
 son convenientes:
-
 MyVariable
 i
 l
@@ -56,12 +52,13 @@ counter
 days_to_christmas
 TheNameIsTooLongAndHardlyReadable
 _
-Estos nombres de variables también son correctos:
 
+Estos nombres de variables también son correctos:
 Adiós_Señora
 sûr_la_mer
 Einbahnstraße
 переменная.
+
 Python te permite usar no solo letras latinas sino también caracteres específicos de
 idiomas que usan otros alfabetos.
 Ahora veamos algunos nombres incorrectos:
@@ -69,6 +66,22 @@ Ahora veamos algunos nombres incorrectos:
 10t (no comienza con una letra)
 !important (no comienza con una letra)
 exchange rate (contiene un espacio).
+
+Python Enhancement Proposal (Propuesta de Mejora de Python, en español):
+Los PEP son documentos que proporcionan información y guías sobre cómo mejorar
+el lenguaje Python, introducir nuevas características, o proponer cambios en
+el lenguaje y su infraestructura. Los PEP son discutidos y revisados por la
+comunidad de desarrolladores de Python antes de ser aceptados o rechazados.
+
+Los PEPs cubren una amplia gama de temas, desde la sintaxis del lenguaje hasta
+las mejoras en la biblioteca estándar de Python, pasando por propuestas de
+estándares y prácticas de codificación. Algunos PEPs han llevado a importantes
+cambios en el lenguaje y su ecosistema, mientras que otros pueden ser más pequeños
+o específicos.
+
+Cada PEP tiene un número único que lo identifica y sigue un proceso de revisión y
+aprobación definido. Por ejemplo, el PEP 8 proporciona directrices sobre cómo
+escribir código Python de manera legible y consistente.
 
 El PEP 8 Style Guide for Python Code recomienda la siguiente convención de
 nomenclatura para variables y funciones en Python:
