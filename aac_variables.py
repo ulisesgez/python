@@ -114,22 +114,16 @@ mayúsculas a minúsculas o viceversa, creando una nueva palabra, la cual no est
 reservada.
 
 Por ejemplo no se puede nombrar a la variable así:
-
 import
 
 No se puede tener una variable con ese nombre esta prohibido. pero se puede hacer lo
 siguiente:
-
 Import
 
 Estas palabras podrían parecer un misterio ahorita, pero pronto se aprenderá acerca de
 su significado.
 
-Cómo crear una variable
 ¿Qué se puede poner dentro de una variable?
-
-Cualquier cosa.
-
 Se puede utilizar una variable para almacenar cualquier tipo de los valores que ya se
 han mencionado, y muchos mas de los cuales aun no se han explicado.
 
