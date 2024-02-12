@@ -1,5 +1,5 @@
 """
-Conversión de tipos (conversiones de tipos)
+Conversión de tipos:
 Python ofrece dos simples funciones para especificar un tipo de dato y resolver este problema, aquí están: int() y float().
 
 Sus nombres indican cual es su función:

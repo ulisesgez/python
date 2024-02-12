@@ -4,7 +4,7 @@ print(lenUno)
 
 lenDos = [(0, 1), (2, 3)]
 lenDosRes = len(lenDos)
-print(lenDosRes)
+print(lenDosRes)# 2
 posicionCero = lenDos[0]
 print(posicionCero)
 posicionUno = lenDos[1]
