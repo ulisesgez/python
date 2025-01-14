@@ -635,7 +635,9 @@ el final de la línea.
 Si se desea colocar un comentario que abarca varias líneas, se debe colocar este
 símbolo en cada línea. Justo como en el siguiente código:
 """
-# Este programa evalúa la hipotenusa c. # a y b son las longitudes de los cátetos. a = 3.0 b = 4.0 c = (a ** 2 + b ** 2) ** 0.5 # Se emplea ** en lugar de una raíz cuadrada. print("c =", c)
+# Este programa evalúa la hipotenusa c. # a y b son las longitudes de los cátetos.
+# a = 3.0 b = 4.0 c = (a ** 2 + b ** 2) ** 0.5 # Se emplea **
+# en lugar de una raíz cuadrada. print("c =", c)
 """
 Los desarrolladores buenos y responsables describen cada pieza importante de código,
 por ejemplo, el explicar el rol de una variables. Aunque la mejor manera de comentar
