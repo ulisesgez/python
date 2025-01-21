@@ -269,6 +269,10 @@ Aunque puede que conozcas a la pitón como una gran serpiente, el nombre del
 lenguaje de programación Python proviene de una vieja serie de comedia de la
 BBC llamada Monty Python's Flying Circus.
 
+
+
+
+
 En el apogeo de su éxito, el equipo de Monty Python estaba realizando sus escenas
 en vivo para audiencias en todo el mundo, incluso en el Hollywood Bowl.
 
