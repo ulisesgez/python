@@ -70,3 +70,56 @@ y estructuras de control como if.
 es_mayor = True
 print(es_mayor)         # True
 print(type(es_mayor))   # <class 'bool'>
+
+"""
+Complex:
+Los números complejos en Python representan valores con una parte real y una parte imaginaria.
+Se escriben usando j para denotar la parte imaginaria. Son útiles en matemáticas avanzadas, ingeniería y física.
+"""
+# Un número complejo tiene parte real e imaginaria
+z = 3 + 4j
+print(z.real)  # Muestra la parte real: 3.0
+print(z.imag)  # Muestra la parte imaginaria: 4.0
+"""
+NoneType:
+El tipo NoneType tiene un único valor posible: None.
+Se usa para indicar que una variable no tiene aún un valor asignado o que una función no retorna nada útil.
+"""
+# Una función sin valor de retorno explícito devuelve None
+def saludo():
+    print("Hola")
+
+resultado = saludo()
+print(resultado)  # Muestra: None
+
+"""
+Tipos binarios
+Los tipos binarios permiten trabajar directamente con datos en formato binario, lo cual es útil para manipular
+archivos, transmitir información por red o realizar operaciones de bajo nivel.
+En Python existen tres tipos principales para esto: bytes, bytearray y memoryview.
+
+Bytes:
+Es una secuencia inmutable de datos binarios. Se usa para representar datos crudos como archivos,
+imágenes o información transmitida por red.
+"""
+dato = b"Hola"
+print(dato)        # b'Hola'
+print(type(dato))  # <class 'bytes'>
+"""
+Bytearray:
+Es una secuencia mutable de datos binarios. A diferencia de bytes, puedes modificar su contenido sin crear
+una nueva variable.
+"""
+dato = bytearray(b"Hola")
+dato[0] = 72  # Cambia la primera letra por 'H'
+print(dato)   # bytearray(b'Hola')
+print(type(dato))  # <class 'bytearray'>
+"""
+Memoryview:
+Es una vista eficiente sobre datos binarios sin copiarlos. Permite trabajar con partes específicas de
+bytes o bytearray sin duplicar memoria.
+"""
+dato = bytearray(b"Hola")
+vista = memoryview(dato)
+print(vista[0])  # 72 (byte en la posición 0)
+print(type(vista))  # <class 'memoryview'>
