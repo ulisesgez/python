@@ -53,11 +53,11 @@ Ejemplos de palabras clave:
 if, else, while, import, class, def, True, None, etc.
 
 Ejemplo incorrecto:
-import = 5  # ❌ Error: 'import' es una palabra clave.
+import = 5  #Error: 'import' es una palabra clave.
 
 Ejemplo permitido por la sensibilidad de mayúsculas:
 """
-Import = 5  # ✔️ válido, aunque no recomendado
+Import = 5  #válido, aunque no recomendado
 """
 Asignación de valores a variables:
 
