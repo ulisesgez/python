@@ -238,3 +238,20 @@ rem = rem % 10          | rem %= 10
 j = j - (i + var + rem) | j -= (i + var + rem)
 x = x ** 2              | x **= 2
 """
+
+"""
+Operador * con secuencias
+Definición:
+El operador * puede usarse para repetir secuencias como cadenas (str), listas (list) o tuplas (tuple). Al multiplicar una secuencia por un número entero, se crea una nueva secuencia con los elementos repetidos esa cantidad de veces.
+"""
+pyTwice = 'Py' * 2
+print(pyTwice)  # 'PyPy'
+
+lista = [1, 0, 0, 0, 1] * 3
+print(lista)  # [1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1]
+
+tupla = (2, 4, 8, 16, 32, 64) * 2
+print(tupla)  # (2, 4, 8, 16, 32, 64, 2, 4, 8, 16, 32, 64)
+
+caracteres = '~' * 50
+print(caracteres)  # '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
