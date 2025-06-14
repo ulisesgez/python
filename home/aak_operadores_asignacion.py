@@ -1,103 +1,75 @@
 """
-Comparación: operador de igualdad
-Pregunta: ¿son dos valores iguales?
-
-Para hacer esta pregunta, se utiliza el == (igual igual) operador.
-
-No olvides esta importante distinción:
-
-= es un operador de asignación, por ejemplo, a = b asigna a la varable a el valor de b;
-== es una pregunta ¿Son estos valores iguales? así que a == b compara a y b.
-Es un operador binario con enlazado del lado izquierdo. Necesita dos argumentos y verifica si son iguales.
-
-Operadores
-Igualdad: El operador igual a (==)
-El operador == (igual a) compara los valores de dos operandos. Si son iguales, el
-resultado de la comparación es True. Si no son iguales, el resultado de la comparación
-es False.
-
-Observa la comparación de igualdad a continuación - ¿Cuál es el resultado de esta operación?
-
-var == 0
-
-Toma en cuenta que no podemos encontrar la respuesta si no sabemos qué valor está almacenado actualmente en la variable var.
-
-Si la variable se ha cambiado muchas veces durante la ejecución del programa, o si se ingresa su valor inicial desde la consola, Python solo puede responder a esta pregunta en el tiempo de ejecución del programa.
-
-Ahora imagina a un programador que sufre de insomnio, y tiene que contar las ovejas negras y blancas por separado siempre y cuando haya exactamente el doble de ovejas negras que de las blancas.
-
-La pregunta será la siguiente:
-black_sheep == 2 * white_sheep
-
-Debido a la baja prioridad del operador ==, la pregunta será tratada como la siguiente:
-black_sheep == (2 * white_sheep)
-
+Operador de asignación (=)
+El operador = se usa para asignar valores a una variable. No se trata de una comparación, sino de almacenar 
+un valor en una variable. A la izquierda va el nombre de la variable, y a la derecha el valor o expresión 
+que se asignará.
 """
-var = 0  # Asignando 0 a var
-print(var == 0)
-
-var = 1  # Asignando 1 a var
-print(var == 0)
-
+variableA = 10  # Asignamos 10 a la variableA
+print(variableA)  # Salida: 10
 """
-Desigualdad: el operador no es igual a (!=)
-El operador != (no es igual a) también compara los valores de dos operandos. Aquí está la diferencia: si son iguales, el resultado de la comparación es False. Si no son iguales, el resultado de la comparación es True.
-
-Ahora echa un vistazo a la comparación de desigualdad a continuación - ¿puedes adivinar el resultado de esta operación?
+Reasignación con el mismo nombre
+Puedes reasignar un nuevo valor a una variable usando su propio valor anterior. Esto permite modificarla paso a paso, como en un contador.
 """
-var = 0  # Asignando 0 a var
-print(var != 0)
- 
-var = 1  # Asignando 1 a var
-print(var != 0)
-
+variableA = variableA + 1  # Ahora vale 11
+print(variableA)  # Salida: 11
 """
-Operadores de comparación: mayor que
-También se puede hacer una pregunta de comparación usando el operador > (mayor que).
-
-Si deseas saber si hay más ovejas negras que blancas, puedes escribirlo de la siguiente manera:
-
-black_sheep > white_sheep  # Mayor que
-
-True lo confirma; False lo niega.
-
-
-Operadores de comparación: mayor o igual que
-El operador mayor que tiene otra variante especial, una variante no estricta, pero se denota de manera diferente que la notación aritmética clásica: >= (mayor o igual que).
-
-Hay dos signos subsecuentes, no uno.
-
-Ambos operadores (estrictos y no estrictos), así como los otros dos que se analizan en la siguiente sección, son operadores binarios con enlazado del lado izquierdo, y su prioridad es mayor que la mostrada por == y !=.
-
-Si queremos saber si tenemos que usar un gorro o no, nos hacemos la siguiente pregunta:
-centigrade_outside >= 0.0  # Mayor o igual que
-
-Operadores de comparación: menor o igual que
-Como probablemente ya hayas adivinado, los operadores utilizados en este caso son: El operador < (menor que) y su hermano no estricto: <= (menor o igual que).
-
-Observa este ejemplo simple:
-current_velocity_mph < 85  # Menor que
-current_velocity_mph <= 85  # Menor o igual que
-Vamos a comprobar si existe un riesgo de ser multados por la ley (la primera pregunta es estricta, la segunda no).
-
-
+Operadores abreviados (asignación compuesta)
+Python permite usar operadores abreviados para modificar variables combinando operadores aritméticos con =, como +=, -=, *=, etc. Esto hace el código más conciso.
 """
-#asignamos:
-variableA = 10
+variableA += 1  # Ahora vale 12
 print(variableA)
 
-#reasignacion, ahora sera el valor de 11:
-variableA = variableA + 1
+variableA -= 2  # Ahora vale 10
 print(variableA)
 
-#sintaxis reducida al reasignar, equivalente a lo anterior (Nos dara 12):
-variableA += 1
+variableA *= 3  # Ahora vale 30
 print(variableA)
+"""
+Operador de igualdad (==)
+El operador == se utiliza para comparar si dos valores son iguales. Si lo son, el resultado es True; si no lo son, False. No debe confundirse con =, que asigna valores.
+"""
+var = 0
+print(var == 0)  # True
 
-#nos dara 10
-variableA -= 2
-print(variableA)
+var = 1
+print(var == 0)  # False
+"""
+Igualdad con expresiones
+Puedes usar == para comparar expresiones más complejas. En Python, la expresión a == b * 2 será evaluada como a == (b * 2) debido a la prioridad de operadores.
+"""
+black_sheep = 6
+white_sheep = 3
+print(black_sheep == 2 * white_sheep)  # True
+"""
+Operador de desigualdad (!=)
+El operador != evalúa si dos valores no son iguales. Si son distintos, el resultado es True; si son iguales, es False.
+"""
+var = 0
+print(var != 0)  # False
 
-#nos dara 30:
-variableA *= 3
-print(variableA)
+var = 1
+print(var != 0)  # True
+"""Operador mayor que (>)
+El operador > compara si el valor de la izquierda es estrictamente mayor que el de la derecha. Es útil para evaluar condiciones como si una cantidad ha superado cierto umbral.
+"""
+black_sheep = 6
+white_sheep = 5
+print(black_sheep > white_sheep)  # True
+"""
+Operador mayor o igual que (>=)
+El operador >= verifica si el valor de la izquierda es mayor o igual al valor de la derecha. Es una comparación no estricta.
+"""
+centigrade_outside = 0.0
+print(centigrade_outside >= 0.0)  # True
+"""
+Operador menor que (<)
+El operador < evalúa si el valor de la izquierda es estrictamente menor que el de la derecha. Se usa para condiciones en donde se busca que algo no sobrepase un límite.
+"""
+current_velocity_mph = 80
+print(current_velocity_mph < 85)  # True
+"""
+Operador menor o igual que (<=)
+El operador <= evalúa si el valor de la izquierda es menor o igual al de la derecha. Es la versión no estricta del operador <.
+"""
+current_velocity_mph = 85
+print(current_velocity_mph <= 85)  # True
