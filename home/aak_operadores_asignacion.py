@@ -50,20 +50,23 @@ print(var != 0)  # False
 var = 1
 print(var != 0)  # True
 """Operador mayor que (>)
-El operador > compara si el valor de la izquierda es estrictamente mayor que el de la derecha. Es útil para evaluar condiciones como si una cantidad ha superado cierto umbral.
+El operador > compara si el valor de la izquierda es estrictamente mayor que el de la derecha.
+Es útil para evaluar condiciones como si una cantidad ha superado cierto umbral.
 """
 black_sheep = 6
 white_sheep = 5
 print(black_sheep > white_sheep)  # True
 """
 Operador mayor o igual que (>=)
-El operador >= verifica si el valor de la izquierda es mayor o igual al valor de la derecha. Es una comparación no estricta.
+El operador >= verifica si el valor de la izquierda es mayor o igual al valor de la derecha.
+Es una comparación no estricta.
 """
 centigrade_outside = 0.0
 print(centigrade_outside >= 0.0)  # True
 """
 Operador menor que (<)
-El operador < evalúa si el valor de la izquierda es estrictamente menor que el de la derecha. Se usa para condiciones en donde se busca que algo no sobrepase un límite.
+El operador < evalúa si el valor de la izquierda es estrictamente menor que el de la derecha.
+Se usa para condiciones en donde se busca que algo no sobrepase un límite.
 """
 current_velocity_mph = 80
 print(current_velocity_mph < 85)  # True
